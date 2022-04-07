@@ -1,0 +1,103 @@
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    /* Header section */
+    .header{
+        height: 10rem;
+    }
+
+    .header.active{
+        height: 6rem;
+    }
+
+    /* Banner section  */
+    .title{
+        font-size: 8rem;
+    }
+
+    /* Contact section */
+    .traveller-img{
+        display: block;
+    }
+
+    .contact-content{
+        justify-content: space-between;
+    }
+
+    .traveller-img img{
+        width: 100%;
+    }
+
+    .contact-form{
+        width: 55%;
+    }
+
+    /* Footer section */
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-content-brand{
+        margin-bottom: 0;
+        width: 60%;
+    }
+
+    .footer .logo img{
+        margin-bottom: 2rem;
+    }
+
+    .footer-heading{
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    section:not(.booking){
+        padding: 10rem 0;
+    }
+
+    /* Header section */
+    .hamburger-menu{
+        display: none;
+    }
+
+    .nav-list{
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        flex-direction: row;
+        justify-content: initial;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .nav-item:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .nav-link:hover{
+        color: var(--yellow-solid);
+    }
+
+    /* Banner section */
+    .subtitle{
+        font-size: 5rem;
+    }
+
+    /* Booking section */
+    .booking .form{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .booking .form .input-group{
+        margin-bottom: 0;
+    }
+
+    .booking .form .input-group .options{
+        min-width: 10rem;
+    }
+
+} 
